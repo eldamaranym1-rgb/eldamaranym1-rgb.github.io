@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ادخل الأوضة - السبعة المعكوسة</title>
+<meta property="og:title" content="تعالى العب معايا السبعة المعكوسة 🃏">
+<meta property="og:description" content="دوس على اللينك واللعبة هتفتح على الأوضة على طول.">
+<style>
+  :root { --bg:#04130b; --panel:#0d3b22; --gold:#f59e0b; --text:#fafaf9; --muted:#a8b8ad; }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px 16px;
+         font-family: system-ui, "Segoe UI", Tahoma, sans-serif; background: radial-gradient(circle, #17603a, var(--bg)); color: var(--text); }
+  .card { width:100%; max-width:420px; background: var(--panel); border:2px solid var(--gold); border-radius:24px; padding:28px 22px; text-align:center; }
+  h1 { color: var(--gold); margin:0 0 6px; font-size:1.8rem; }
+  .muted { color: var(--muted); }
+  .code { font-size:3.2rem; font-weight:900; letter-spacing:.4em; color: var(--gold); direction:ltr; margin:10px 0 4px; padding-left:.4em; }
+  a.btn { display:block; margin-top:14px; padding:16px; border-radius:16px; background: var(--gold); color:#3b2200; font-weight:800; text-decoration:none; font-size:1.1rem; }
+  a.small { display:inline-block; margin-top:14px; color: var(--muted); font-size:.9rem; }
+  ol { text-align:right; color: var(--muted); line-height:1.9; padding-right:20px; }
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+<main class="card">
+  <h1>السبعة المعكوسة</h1>
+  <p class="muted">صاحبك مستنيك في الأوضة 🃏</p>
+  <div id="has-code" class="hidden">
+    <p class="muted">كود الأوضة</p>
+    <div class="code" id="code"></div>
+  </div>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.integration.sab3a_el_ma3koosa">نزّل اللعبة من Google Play</a>
+  <ol>
+    <li>لو اللعبة عندك، ارجع دوس على اللينك تاني وهتفتح على الأوضة.</li>
+    <li>أو افتح اللعبة ← العب أونلاين ← ادخل أوضة، واكتب الكود.</li>
+  </ol>
+  <a class="small" href="https://play.google.com/apps/testing/com.integration.sab3a_el_ma3koosa">لو انت من المجربين: انضم من هنا</a>
+</main>
+<script>
+  // Only ever shows a 4-digit code; anything else in the link is ignored.
+  var c = new URLSearchParams(location.search).get('c') || '';
+  if (/^[0-9]{4}$/.test(c)) {
+    document.getElementById('code').textContent = c;
+    document.getElementById('has-code').classList.remove('hidden');
+  }
+</script>
+</body>
+</html>

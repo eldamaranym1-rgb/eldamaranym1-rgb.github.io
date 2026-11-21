@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.integration.sab3a_el_ma3koosa",
+      "sha256_cert_fingerprints": [
+        "74:04:FD:97:D8:3D:20:0E:6C:7E:E3:90:D4:FD:7F:9D:9F:04:E4:B0:55:38:07:53:79:D4:31:7A:7E:93:3E:F0",
+        "E7:26:2D:8D:75:37:22:17:19:47:41:D4:96:AD:4C:43:5D:49:2D:C1:3C:F2:01:68:FC:B6:AD:97:98:8C:71:09"
+      ]
+    }
+  }
+]
