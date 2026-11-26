@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "S3UG3J7KYU.com.integration.sab3aElMa3koosa"
+        ],
+        "components": [
+          { "/": "/join" },
+          { "/": "/join/*" }
+        ]
+      }
+    ]
+  }
+}
